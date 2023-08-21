@@ -8,9 +8,7 @@
  */
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit, _atoi;
-	
-	nb = _atoi("98");
+	int i, d, n, len, f, digit;
 
 	i = 0;
 	d = 0;
@@ -42,5 +40,6 @@ int _atoi(char *s)
 	}
 	if (f == 0)
 		return (0);
-	return (n);
+	
+	return (_atoi);
 }
