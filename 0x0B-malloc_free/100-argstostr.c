@@ -33,8 +33,9 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		{
-		for (n = 0; av[i][n]; n++);
-		}		
+		for (n = 0; av[i][n]; n++)
+			;
+		}
 		tape[r] = av[i][n];
 		r++;
 	}
