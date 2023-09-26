@@ -2,7 +2,7 @@
 
 /**
  * find_listint_loop - fines the loop in a linked list
- ( @head: linked list to search for
+ * @head: linked list to search for
  *
  * Return: address of the node where the loopp starts, or NULL
  */
@@ -24,7 +24,7 @@ listint_t *find_listint_loop(listint_t *head)
 			while (slow != fast)
 			{
 				slow = slow->next;
-				fast = fast->nezt;
+				fast = fast->next;
 			}
 			return (fast);
 		}
